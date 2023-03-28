@@ -3,6 +3,11 @@
     padding:0;
 }
 
+div{
+    user-select: none;
+    -moz-user-select: none;
+}
+
 body{
     display:flex;
     height:100vh;
@@ -11,9 +16,19 @@ body{
     align-items: center;
 }
 
-.container-master{
-    
+#container-master{
     border:3px solid black;
-    height:460px;
-    width:460px;
+    height:80vh;
+    width:80vh;
+    display:flex;
+    flex-wrap: wrap;
+    overflow:hidden;
+}
+
+.tile{
+    flex:1 1 auto;
+    text-align: center;
+    text-justify: distribute;
+    vertical-align:middle;
+    box-sizing: border-box;
 }
